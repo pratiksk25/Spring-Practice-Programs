@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<!-- Servlet Declaration -->
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>com.servlet.FirstServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>com.servlet.SecondServlets</servlet-class>
+	</servlet>
+	
+	<!-- Servlet Mapping -->
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/web</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/second</url-pattern>
+	</servlet-mapping>
+	
+
+	<session>
+		<Session-timeout>
+			30
+		</Session-timeout>
+	</session>
+
+</web-app>

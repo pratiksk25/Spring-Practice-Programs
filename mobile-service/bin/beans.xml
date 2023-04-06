@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xsd tag :: this is use to validate the grammer of the written tags and validate the tags are correct or not -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="miss" class="com.mobile.ser.MissCall"></bean>
+	
+	<bean id="hello" class="com.mobile.ser.HelloTune"></bean>
+	
+	<bean id="Data" class="com.mobile.ser.Data"></bean>
+	
+	<bean id="air" class="com.mobile.ser.Airtel">
+		
+			<property name="service" ref="Data"/>
+	
+	</bean>
+	
+	
+
+</beans>
+	

@@ -1,0 +1,39 @@
+their are two type of fetch type
+1. lazy - in lazy loading associated data loads only when we explicitly call getter or size methods
+2. eager - it is design pattern in which data loding occure on the spot
+
+Hibernate/Persistence lifecycle state
+their are 4 state:
+1 Transient State
+2 Persistent State
+3 Detached State
+4 Removed State
+
+
+we have 2 more thing 
+1 database -  it is use to store data into table form
+2 session Object -  it works as a meadiator and this object has many methods like
+	- save
+	- delete 
+	- update 
+	- create query
+	and it make sure that we are able to store our data to database
+
+
+1. when we create new object and when we set the properties of that new object goes to transient state (it mean that the object holds the value) and also it means that it is not in database and also not in session 
+	after that you do session.save(pass the object)that object will get associated with session and session will hold the refrence of that object and data goes to database
+	after making changes and all then we close the session the object inside the session will get detached
+2. Detached state - object is no more associated with session
+3. 
+
+
+* imp : Caching in hibernate
+caching is the mechanism to enhance the performance of application.
+it is use to reduce the no of database queries to make application data feching faster
+
+3 type of caching
+1 first level : associated with session object, it saves data to session object untill we dont close the session  , is is bydefalut provided we can use it freely
+2 2nd level : associated with sessionFactory it is bil level,  we need to enable mannually and also we need to do configuration.
+3 3rd level : it is query level caching (we dont use it much)
+
+	

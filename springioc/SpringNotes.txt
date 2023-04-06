@@ -1,0 +1,43 @@
+Spring
+
+To make app configurable 
+
+1 spring can create objects for the developer    
+:  it create the classes into config file
+2 and spiring can manage the objects 
+ :  and the created object willl be stored inside the ioc container 
+ 	every object created inside the ioc container by spring is call as bean
+3 it has the method call getBean("class name");
+	we can pass the class name to it can be use to creat the object at runtime
+
+their are 2 type of IOC container
+	1 Bean factory(Interface) : it is backword in features 
+	2 Application Context(Interface) : we have to use this because of advance features
+		- for Application context we have 	class that is implemented call ClassPathXmlApplicationContext
+
+
+Spring inversion control  : with the help of inversion control we are able to create diffrent type of class objectes 
+	advantages :
+		1 without inversion control we mannually have to cretae the object so with the help of this we are able to create the object dinamically 
+ 	
+Q ) what is dependencies injection ?
+	1 Setter injection
+	2 constructor injetion
+	
+	in a class we have dependencies of two type 
+		1. dependencies in form of literal type
+		2. dependencies in form of objectives
+		3. dependencies in form of collections
+		
+
+CREATING OBJECT FOR US
+ MANAGING OUR OBJECTS
+SPRING
+INVERSION
+HELPING OUR APPLICATION TO
+OF CONTROL
+    BE CONFIGURABLE
+MANAGING DEPENDANCIES
+
+		
+	
